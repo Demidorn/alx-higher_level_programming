@@ -1,0 +1,2 @@
+#!/bin/bash
+pthyon3 $PYFILE
