@@ -1,2 +1,2 @@
-#!/usr/bin/python3
-pthyon3 $PYFILE
+#!/bin/bash
+pthyon3 "$PYFILE"
