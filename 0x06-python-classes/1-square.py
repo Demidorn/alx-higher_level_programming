@@ -1,11 +1,18 @@
 #!/usr/bin/python3
-"""class Square"""
 
-
+""" definig a class."""
 class Square:
-    """Private instance attribute and instantation with optional"""
-    def __init__(self, size=0):
-             """
+    """
+    This class defines a square.
+
+    Attributes:
+        __size (int): The size of the square.
+
+    Methods:
+        __init__(self, size): Constructor method to initialize a Square instance.
+    """
+    def __init__(self, size):
+        """
         Initialize a Square instance.
 
         Args:
