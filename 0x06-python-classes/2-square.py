@@ -1,3 +1,6 @@
+#!/usr/bin/python3
+
+"""defines sqaure class"""
 class Square:
     """Private instance attribute and instantation with optional
     Attributes:
