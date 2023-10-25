@@ -1,27 +1,32 @@
 #!/usr/bin/python3
-"""class Square"""
+
+
+"""Defines square class"""
 
 
 class Square:
-    """Private instance attribute and instantation with optional"""
+    """The summary line for a class docstring should fit on one line."""
+
     def __init__(self, size=0):
-            self.size = size
+        """The summary line for a class docstring should fit on one line."""
+        self.size = size
+
+    def area(self):
+        """The summary line for a class docstring should fit on one line."""
+        return (self._size * self._size)
 
     @property
     def size(self):
-        """getting size"""
-        return self.__size
+        """The summary line for a class docstring should fit on one line."""
+        return self._size
 
     @size.setter
     def size(self, value):
-        """Setting value"""
-        if type(value) is not int:
+        """The summary line for a class docstring should fit on one line."""
+        if type(value) == int:
+            if value >= 0:
+                self._size = value
+            else:
+                raise ValueError("size must be >= 0")
+        else:
             raise TypeError("size must be an integer")
-        elif value < 0:
-            raise ValueError("size must be >= 0")
-
-        self.__size = value
-
-    def area(self):
-        """area of square"""
-        return self.__size ** 2
