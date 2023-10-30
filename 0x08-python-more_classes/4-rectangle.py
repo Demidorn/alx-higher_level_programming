@@ -12,6 +12,24 @@ class Rectangle:
         self.width = width
         self.height = height
 
+    def __str__(self):
+        """ generates a string representation"""
+        if self._width == 0 or self._height == 0:
+            return ""
+        else:
+            rectangle_str = ""
+            for i in range(self._height):
+                for j in range(self._width):
+                    rectangle_str += "#"
+                if i < self._height - 1:
+                    rectangle_str += "\n"
+            return rectangle_str
+    def __repr__(self):
+        """Return a string representation of a Rectangle instance
+            that is able to recreate a new instance by using eval()
+        """
+        return f"Rectangle({self._width}, {self._height})"
+
     @property
     def width(self):
         """ retrieves the width of the rectangle"""
@@ -50,22 +68,4 @@ class Rectangle:
         given by 2*(height + width """
         if self._height == 0 or self._width == 0:
             return 0
-        return 2 * (self._width + self._height)
-
-    def __str__(self):
-	""" generates a string representation"""
-        if self._width == 0 or self._height == 0:
-            return ""
-        else:
-            rectangle_str = ""
-            for i in range(self._height):
-                for j in range(self._width):
-                    rectangle_str += "#"
-                if i < self._height - 1:
-                    rectangle_str += "\n"
-            return rectangle_str
-    def __repr__(self):
-	"""Return a string representation of a Rectangle instance
-            that is able to recreate a new instance by using eval()
-        """
-        return f"Rectangle({self._width}, {self._height})"
+        return 2 * (self._width + self._height
