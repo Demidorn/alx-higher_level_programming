@@ -13,7 +13,7 @@ class Rectangle:
         """
         self.width = width
         self.height = height
-	Rectangle.number_of_instances += 1
+        Rectangle.number_of_instances += 1
 
     def __str__(self):
         """ generates a string representation"""
@@ -28,12 +28,12 @@ class Rectangle:
 
     def __repr__(self):
         """Returns a string representation of the rectanglee by using eval() """
-	return "Rectangle({}, {})".format(self._width, self._height)
+        return "Rectangle({}, {})".format(self._width, self._height)
 
     def __del__(self):
         """Deletes the rectangle """
         print("Bye rectangle...")
-	Rectangle.number_of_instances -= 1
+        Rectangle.number_of_instances -= 1
 
     @property
     def width(self):
