@@ -68,4 +68,4 @@ class Rectangle:
         given by 2*(height + width """
         if self._height == 0 or self._width == 0:
             return 0
-        return 2 * (self._width + self._height
+        return 2 * (self._width + self._height)
