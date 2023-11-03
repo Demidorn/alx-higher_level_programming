@@ -1,0 +1,40 @@
+The ``text_indentation`` module
+======================
+
+Using ``text_indentation``
+-------------------
+
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+>>> text_indentation("Hello. This is Demi, dorn")
+Hello.
+<BLANKLINE>
+This is Demi, dorn
+
+>>> text_indentation(None)
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+
+>>> text_indentation(5)
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+
+>>> text_indentation("Name:     Demidorn?")
+	
+Name:
+<BLANKLINE>
+	
+Demidorn?
+<BLANKLINE>
+
+>>> text_indentation("")
+
+>>> text_indentation(True)
+Traceback (most recent call last):
+TypeError: text must be a string
+
+>>> text_indentation("?")
+?
+<BLANKLINE>
