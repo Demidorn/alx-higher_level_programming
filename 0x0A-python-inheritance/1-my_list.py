@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-
 """ new class that inherites its attributes from list class"""
+
+
 class MyList(list):
     """ initialization of function that prints
     all atributes inherited from the list base class
