@@ -1,14 +1,14 @@
 #!/usr/bin/python3
-""" class square inherits instatiation
-from rectangle class
-"""
+""" declaration of class square that
+inherits from class rectangle"""
 
 
-Rectangle = __import__('9-rectangle').Rectangle
+Rectangle = __import__('10-rectangle').Rectangle
 
 
 class Square(Rectangle):
     """ class square inherits from rectangle class """
+
     def __init__(self, size):
         """ initializes square """
         super().integer_validator("size", size)
