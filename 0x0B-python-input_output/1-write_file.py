@@ -8,5 +8,5 @@ def write_file(filename="", text=""):
     with open(filename, 'r', encoding='utf-8') as f:
         z = 0
         for file in f:
-            z = += 1
+            z += 1
         return z
