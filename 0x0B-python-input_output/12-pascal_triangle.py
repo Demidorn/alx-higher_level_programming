@@ -14,8 +14,10 @@ def pascal_triangle(n):
     if n <= 0:
         return tri_list
     for j in range(1, n + 1):
+        """"initialization of list"""
         tri_list.append([])
         for ele in range(li):
+            """ checking object representation"""
             if ele == 0 or ele == j - 1:
                 tri_list[j].append(1)
             else:
