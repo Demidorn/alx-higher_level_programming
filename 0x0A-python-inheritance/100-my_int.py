@@ -1,21 +1,14 @@
 #!/usr/bin/python3
-
-"""
-class MyInt
-inherits from int
-
-"""
+""" inverts eq and nq in a class """
 
 
 class MyInt(int):
+    """ inverted equality for int class """
+
     def __eq__(self, other):
-        """
-        equal to
-        """
-        return False
+        if isinstance(self, type(other)):
+            return False
 
     def __ne__(self, other):
-        """
-        not equal to
-        """
-        return True
+        if isinstance(self, type(other)):
+            return True
