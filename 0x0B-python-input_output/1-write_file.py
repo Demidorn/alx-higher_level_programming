@@ -6,5 +6,7 @@ and returns number of characters written """
 def write_file(filename="", text=""):
     """ read file """
     with open(filename, 'r', encoding='utf-8') as f:
-        xters = f.write(text)
-    return xters
+        z = 0
+        for file in f:
+            z = += 1
+        return z
