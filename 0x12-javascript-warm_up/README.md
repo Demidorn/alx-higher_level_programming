@@ -25,10 +25,10 @@ JavaScript Warm-up is a repository designed to help developers of all levels str
 
 | TASKS | DESCRIPTION | SOLUTION |
 |-------|-------------|----------|
-| TASK 0 | First constant, first print| - You must create a constant variable    called _myVar_ with the value “JavaScript is amazing”. - You must use __console.log(...)__ to print all output.
-                                        
-                                        - You are not allowed to use var.
+| TASK 0 | First constant, first print| - You must create a constant variable    called _myVar_ with the value “JavaScript is amazing”. <br>- You must use __console.log(...)__ to print all output. <br> - You are not allowed to use var.
 
+                                        
+                                        
 
 
 Clone the repository to your local machine:
