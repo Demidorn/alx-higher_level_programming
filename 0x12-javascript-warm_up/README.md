@@ -25,8 +25,8 @@ JavaScript Warm-up is a repository designed to help developers of all levels str
 
 | TASKS | DESCRIPTION | SOLUTION |
 |-------|-------------|----------|
-| TASK 0 | First constant, first print| - You must create a constant variable    called _myVar_ with the value “JavaScript is amazing”.
-                                        - You must use __console.log(...)__ to print all output.
+| TASK 0 | First constant, first print| - You must create a constant variable    called _myVar_ with the value “JavaScript is amazing”. - You must use __console.log(...)__ to print all output.
+                                        
                                         - You are not allowed to use var.
 
 
@@ -36,11 +36,3 @@ Clone the repository to your local machine:
    ```bash
    git clone https://github.com/Demidorn/alx-higher_level_programming.git
    ```
-
-| TASKS | DESCRIPTION | SOLUTION |
-|-------|-------------|----------|
-| TASK 0 | First constant, first print | - You must create a constant variable called _myVar_ with the value “JavaScript is amazing”.
-                                        - You must use __console.log(...)__ to print all output.
-                                        - You are not allowed to use var.
-                                        
-                                          |
