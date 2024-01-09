@@ -9,7 +9,10 @@ const factorial = (n) => {
   return n * factorial(n - 1);
 };
 
-const arg = process.argv[2];
-const num = parseInt(arg);
+module.exports = { factorial };
+if (require.main === modules) {
+  const arg = process.argv[2];
+  const num = parseInt(arg);
 
 console.log(`${factorial(num)}`);
+}
