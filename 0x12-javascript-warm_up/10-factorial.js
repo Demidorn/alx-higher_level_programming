@@ -10,7 +10,7 @@ const factorial = (n) => {
 };
 
 module.exports = { factorial };
-if (require.main === modules) {
+if (require.main === module) {
   const arg = process.argv[2];
   const num = parseInt(arg);
 
