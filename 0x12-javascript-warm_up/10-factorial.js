@@ -14,5 +14,5 @@ if (require.main === module) {
   const arg = process.argv[2];
   const num = parseInt(arg);
 
-console.log(`${factorial(num)}`);
+  console.log(`${factorial(num)}`);
 }
