@@ -7,7 +7,7 @@ function factorial (n) {
     return 1;
   }
   return n * factorial(n - 1);
-};
+}
 
 module.exports = { factorial };
 if (require.main === module) {
