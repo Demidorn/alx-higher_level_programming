@@ -21,10 +21,10 @@ The biggest difference is: no more SQL queries! Indeed, the purpose of an ORM is
 > cur.execute("SELECT * FROM states ORDER BY id ASC") # HERE I have <br>to know SQL to grab all states in my database
 > query_rows = cur.fetchall()
 > for row in query_rows:
-    >> print(row)
+>> print(row)
 > cur.close()
 > conn.close()
-> ```
+```
 
 
 **With an ORM:**
@@ -35,8 +35,9 @@ The biggest difference is: no more SQL queries! Indeed, the purpose of an ORM is
 
 > session = Session(engine)
 > for state in session.query(State).order_by(State.id).all(): <br># HERE: no SQL query, only objects!
-    >> print("{}: {}".format(state.id, state.name))
+>> print("{}: {}".format(state.id, state.name))
 > session.close()
+```
 
 ## Resources
 ### Read or watch:
