@@ -2,8 +2,8 @@
 """prints all cities from db"""
 
 import sys
-from model_state import Base, State
-from model_city import City
+from model_state import State
+from model_city import City, Base
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
