@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-""" writes a python script that displays the value of the X-Request-Id variable"""
+""" writes a python script that displays
+the value of the X-Request-Id variable"""
 
 
 import urllib.request
