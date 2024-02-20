@@ -20,27 +20,28 @@ request.get(apiURL, (error, response, body) => {
 
     console.log(`Characters for Movie ID ${movieId} - "${movieData.title}":`);
 
-    movieData.characters.reduce((previousPromise, characterUrl) => {
-      return previousPromise.then(() => {
-        return new Promise((resolve, reject) => {
-          request.get(characterUrl, (charError, charResponse, charBody) => {
-            if (charError) {
-              console.error('Error fetching character data:', charError);
-              reject(charError);
-            } else {
-              try {
-                const characterData = JSON.parse(charBody);
-                console.log(characterData.name);
-                resolve();
-              } catch (charParseError) {
-                console.error('Error parsing character data:', charParseError.message);
-                reject(charParseError);
-              }
+    const characterNames = [];
+
+    const fetchAndPrintCharacter = (characterUrl) => {
+      request.get(characterUrl, (charError, charResponse, charBody) => {
+        if (charError) {
+          console.error('Error fetching character data:', charError);
+        } else {
+          try {
+            const characterData = JSON.parse(charBody);
+            characterNames.push(characterData.name);
+
+            if (characterNames.length === movieData.characters.length) {
+              characterNames.forEach(name => console.log(name));
             }
-          });
-        });
+          } catch (charParseError) {
+            console.error('Error parsing character data:', charParseError.message);
+          }
+        }
       });
-    }, Promise.resolve());
+    };
+
+    movieData.characters.forEach(fetchAndPrintCharacter);
   } catch (parseError) {
     console.error('Error parsing the API response:', parseError.message);
   }
